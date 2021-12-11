@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "health"
+version = "0.1.0"
+description = ""
+authors = ["Bruno Soares <tsoares.bruno@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pyspark = "^3.2.0"
+requests = "^2.26.0"
+pandas = "^1.3.4"
+apache-airflow = "^2.2.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+black = {version = "^21.12b0", allow-prereleases = true}
+mypy = "^0.910"
+flake8 = "^4.0.1"
+ipykernel = "^6.6.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
